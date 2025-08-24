@@ -4527,17 +4527,12 @@
         function initSliders() {
             let swiper1;
             if (document.querySelector(".product__slider")) new core(".product__slider", {
-                modules: [ Navigation ],
+                modules: [ Navigation, Scrollbar ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 20,
                 autoHeight: true,
-                speed: 800,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true
-                },
                 scrollbar: {
                     el: ".swiper-scrollbar",
                     draggable: true
@@ -4548,21 +4543,21 @@
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 1.2,
+                        spaceBetween: 10,
                         autoHeight: true
                     },
                     478: {
-                        slidesPerView: 2,
+                        slidesPerView: 2.2,
                         spaceBetween: 20
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 3.2,
                         spaceBetween: 20
                     },
                     1268: {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 20
                     }
                 },
                 on: {}
