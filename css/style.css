@@ -1251,6 +1251,7 @@ ins {
 .item-catalog__image-ibg {
   overflow: hidden;
   padding-bottom: 100%;
+  position: relative;
 }
 
 .item-catalog__image-ibg img {
