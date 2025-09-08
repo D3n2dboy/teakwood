@@ -24,6 +24,12 @@ body::after {
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
+
+	img {
+		max-width: 100%;
+		max-height: rem(500);
+		object-fit: cover;
+	}
 }
 .popup_show {
 	z-index: 150;

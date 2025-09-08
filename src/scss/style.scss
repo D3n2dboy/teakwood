@@ -22,6 +22,9 @@ $fontSize: rem(20); // где 14(px) - размер шрифта по умолч
 $mainColor: #000; // Цвет шрифта по умолчанию
 $colorDark: #e7e7e7;
 
+$colorAccent: #743a00;
+$colorAccentContacts: #18b694;
+
 $colorDark: #181818;
 // Отступы
 $borderRadiusSmall: rem(5);
@@ -141,3 +144,8 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "delivery";
+@import "about";
+@import "contacts";
+@import "catalog";
+@import "card-product";

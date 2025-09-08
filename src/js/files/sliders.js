@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Manipulation, Thumbs, Scrollbar, Pagination, EffectFade } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -17,7 +17,7 @@ EffectFade, Lazy, Manipulation
 
 // Стили Swiper
 // Базовые стили
-//import "../../scss/base/swiper.scss";
+import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
 import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
@@ -25,20 +25,21 @@ import "../../scss/libs/swiper.scss";
 
 // Инициализация слайдеров
 function initSliders() {
+	let swiper1;
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.product__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем скласс нужного слайдера
+		new Swiper('.product__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Scrollbar],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 4,
-			spaceBetween: 30,
+			spaceBetween: 20,
 			autoHeight: true,
-			speed: 800,
+			//speed: 800,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
@@ -57,10 +58,10 @@ function initSliders() {
 
 			// Пагинация
 
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
+			// pagination: {
+			// 	el: '.swiper-pagination',
+			// 	clickable: true,
+			// },
 
 
 			// Скроллбар
@@ -78,19 +79,117 @@ function initSliders() {
 			},
 
 			// Брейкпоинты
-			/*
+
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
+					slidesPerView: 1.2,
+					spaceBetween: 10,
 					autoHeight: true,
 				},
-				768: {
-					slidesPerView: 2,
+				478: {
+					slidesPerView: 2.2,
 					spaceBetween: 20,
 				},
-				992: {
-					slidesPerView: 3,
+				768: {
+					slidesPerView: 3.2,
+					spaceBetween: 20,
+				},
+				1268: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+			},
+
+			// События
+			on: {
+
+			}
+		});
+	}
+
+	if (document.querySelector('.card-product-thumbs__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		swiper1 = new Swiper('.card-product-thumbs__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Manipulation, Thumbs],
+
+			//loop: true,
+			spaceBetween: 20,
+			slidesPerView: 4,
+			freeMode: true,
+			watchSlidesProgress: true,
+			direction: "vertical",
+			autoHeight: true,
+
+			breakpoints: {
+				320: {
+					spaceBetween: 10,
+					direction: "horizontal",
+					autoHeight: false,
+
+				},
+				768: {
+					spaceBetween: 10,
+				},
+			},
+		});
+	}
+
+	if (document.querySelector('.card-product__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.card-product__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Manipulation, Thumbs],
+
+			//loop: true,
+			//spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			thumbs: {
+				swiper: swiper1,
+			},
+		});
+	}
+
+	if (document.querySelector('.related-product__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.related-product__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Scrollbar, Pagination, Manipulation],
+			//loop: true,
+			spaceBetween: 20,
+			slidesPerView: 4,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+
+			// Скроллбар
+
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+
+			// Брейкпоинты
+
+			breakpoints: {
+				320: {
+					slidesPerView: 1.2,
+					//spaceBetween: 0,
+					autoHeight: true,
+				},
+				478: {
+					slidesPerView: 2.2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 3.2,
 					spaceBetween: 20,
 				},
 				1268: {
@@ -98,13 +197,11 @@ function initSliders() {
 					spaceBetween: 30,
 				},
 			},
-			*/
-			// События
-			on: {
-
-			}
 		});
 	}
+
+
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

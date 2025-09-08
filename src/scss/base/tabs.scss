@@ -2,20 +2,48 @@
 	// .tabs__navigation
 	&__navigation {
 		display: flex;
-	}
-	// .tabs__title
-	&__title {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
-		&._tab-active {
-			border: 1px solid #000;
+		background-color: #eee;
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
 		}
 	}
+
+	// .tabs__title
+	&__title {
+		padding: rem(15) rem(35);
+		transition: all 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $colorAccent;
+				color: #fff;
+				opacity: 0.8;
+			}
+		}
+
+		&._tab-active {
+			//border: 1px solid #000;
+			color: #fff;
+			background-color: $colorAccent;
+
+			@media (min-width: $mobile) {
+				font-weight: 500;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
 	// .tabs__content
 	&__content {
+		//border-top: 0;
 		border: 1px solid #eee;
-		padding: rem(10) rem(15);
+		padding: rem(25) rem(35);
 	}
 	// .tabs__body
 	&__body {

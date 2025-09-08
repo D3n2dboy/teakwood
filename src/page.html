@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Название страницы"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+
+				<div class="page__body">
+
+					<nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+						<span>
+							<a href="/">Главная</a>
+						</span> &gt; <span>Название страницы</span>
+					</nav>
+
+					<div class="page__title">
+						<h1 class="title">
+							Название страницы
+						</h1>
+					</div>
+					<div class="page__content ">
+						<div class="page__content-main">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium repudiandae
+							illum
+							iste accusamus nulla voluptas quisquam cumque quaerat ex consectetur minus voluptatem dolor,
+							repellendus sit fugit rerum quis! Quaerat?
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Название товара"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+
+				<div class="page__body">
+
+					<nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+						<span>
+							<a href="/">Главная</a>
+						</span> &gt; <span>Название товара</span>
+					</nav>
+
+					<div class="page__content ">
+						<div class="page__content-main">
+							<div class="card-product">
+								<div class="card-product__image">
+									<div thumbsSlider="" class="card-product-thumbs__slider swiper">
+										<div class="card-product-thumbs__wrapper swiper-wrapper">
+											<div class="card-product-thumbs__slide swiper-slide">
+												<img src="@img/product/01.jpg" alt="">
+											</div>
+											<div class="card-product-thumbs__slide swiper-slide">
+												<img src="@img/product/01.jpg" alt="">
+											</div>
+
+										</div>
+									</div>
+
+									<!-- Оболочка слайдера -->
+									<div class="card-product__slider swiper">
+										<!-- Двигающееся часть слайдера -->
+										<div class="card-product__wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="card-product__slide swiper-slide">
+												<img src="@img/product/01.jpg" alt="">
+											</div>
+											<div class="card-product__slide swiper-slide">
+												<img src="@img/product/01.jpg" alt="">
+											</div>
+
+										</div>
+										<!-- Если нужна пагинация -->
+										<div class="swiper-pagination"></div>
+										<!-- Если нужна навигация (влево/вправо) -->
+										<button type="button" class="swiper-button swiper-button-prev"></button>
+										<button type="button" class="swiper-button swiper-button-next"></button>
+										<!-- Если нужен скролбар -->
+									</div>
+								</div>
+								<div class="card-product__info">
+									<div class="card-product__title">Название товара</div>
+									<div class="card-product__sky">Арт: 3271892</div>
+									<div class="card-product__aviability color-green">В наличии</div>
+									<div class="card-product__aviability color-red">Нет в наличии</div>
+									<div class="card-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+									<a href="#" class="_icon-cart button card-product__button">
+										В корзину
+									</a>
+
+									<div class="card-product__body">
+										<div class="card-product__sub-title">
+											Подзаголовок
+										</div>
+										<div class="card-product__link">
+											Размеры
+										</div>
+										<div class="card-product__link">
+											Размеры
+										</div>
+
+										<!-- <div class="card-product__sub-title">
+											Таблица размеров
+										</div> -->
+										<a href="" data-popup="#popup" class="button card-product__popup _icon-info">
+											Таблица размеров
+										</a>
+
+
+									</div>
+								</div>
+							</div>
+
+
+							<div data-tabs class="content tabs card-product__tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active">Характеристики</button>
+									<button type="button" class="tabs__title">Описание</button>
+									<button type="button" class="tabs__title">Таб №3</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+										Артикул:<br>
+										6320/Airborn brown<br><br>
+										Параметры модели:<br>
+										102/84/100<br><br>
+										На модели размер:<br>
+										50<br><br>
+									</div>
+									<div class="tabs__body">
+										<p>Куртка пилот от бренда Teakwood представляет собой эксклюзивное предложение
+											для
+											мужчин, предпочитающих комфорт и стиль.</p>
+										<p>Эта модель выполнена из высококачественной натуральной кожи ягненка,
+											обеспечивает идеальное сочетание прочности и
+											мягкости. Внутри куртки находится теплый и удобный полиэстер, который
+											подходит
+											для использования в температурном
+											диапазоне от 0 до +18 градусов.</p>
+
+										<ul>
+											<li>Пункт 1</li>
+											<li>Пункт 1</li>
+											<li>Пункт 1</li>
+											<li>Пункт 1</li>
+										</ul>
+										<p>Особенностью данной куртки является её большие
+											размеры, что делает её идеальным выбором
+											для мужчин с различными фигурами. Без капюшона и со съемной опушкой
+											воротник,
+											украшенный мехом, добавляют элегантности и
+											тепла. Молния беспечивает легкость в одевании и снимании.</p>
+									</div>
+									<div class="tabs__body">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium
+										repudiandae
+										illum
+										iste accusamus nulla voluptas quisquam cumque quaerat ex consectetur minus
+										voluptatem
+										dolor,
+										repellendus sit fugit rerum quis! Quaerat?
+									</div>
+								</div>
+							</div>
+
+							<div class="card-product__related related-product">
+								<div class="related-product__title">
+									Похожие товары
+								</div>
+								<!-- Оболочка слайдера -->
+								<div class="related-product__slider swiper">
+									<!-- Двигающееся часть слайдера -->
+									<div class="related-product__wrapper swiper-wrapper">
+										<!-- Слайд -->
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+
+										<div class="related-product__slide swiper-slide">
+											<div class="related-product__body">
+												<a href="#" class="related-product__link">
+													<div class="related-product__image-ibg">
+														<img data-src="@img/product/01.jpg" alt="01">
+													</div>
+
+													<div class="related-product__label">
+														Name product
+													</div>
+												</a>
+												<div class="related-product__price">
+													<span class="price">
+														<del>
+															<span class="woocommerce-Price-amount amount">3467 <span
+																	class="woocommerce-Price-currencySymbol">₽</span></span>
+														</del>
+														<ins>
+															<span class="woocommerce-Price-amount amount">2990
+															</span><span
+																class="woocommerce-Price-currencySymbol">₽</span>
+														</ins>
+													</span>
+												</div>
+											</div>
+											<a class="button related-product__button" href="">В корзину</a>
+										</div>
+									</div>
+									<!-- Если нужна пагинация -->
+									<div class="swiper-pagination"></div>
+									<!-- Если нужна навигация (влево/вправо) -->
+									<button type="button" class="swiper-button swiper-button-prev"></button>
+									<button type="button" class="swiper-button swiper-button-next"></button>
+									<!-- Если нужен скролбар -->
+									<div class="swiper-scrollbar"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+
+
+	</main>
+	@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

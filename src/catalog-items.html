@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог товаров"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+
+				<div class="page__body">
+
+					<nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+						<span>
+							<a href="/">Главная</a>
+						</span> &gt; <span>Каталог товаров</span>
+					</nav>
+
+					<div class="page__title">
+						<h1 class="title">
+							Каталог товаров
+						</h1>
+					</div>
+					<div class="page__content">
+
+						<div class="page__content-main catalog-product">
+
+							<div class="panel-catalog">
+								<div class="panel-catalog__quantity">
+									<p class="woocommerce-result-count" role="alert" aria-relevant="all"
+										aria-hidden="false">
+										Отображение 1–12 из 15</p>
+								</div>
+								<div class="panel-catalog__control">
+									<span class="panel-catalog__control-label">
+										Сортировать
+									</span>
+
+									<form class="woocommerce-ordering" method="get">
+										<select name="orderby" class="orderby" aria-label="Заказ в магазине">
+											<option value="popularity" selected="selected">По популярности</option>
+											<option value="rating">По рейтингу</option>
+											<option value="date">По новизне</option>
+											<option value="price">По возрастанию цены</option>
+											<option value="price-desc">По убыванию цены</option>
+										</select>
+										<input type="hidden" name="paged" value="1">
+									</form>
+								</div>
+								<button type="button" class="panel-catalog__filter-button _icon-filter">Фильтры</button>
+							</div>
+
+
+							<div class="catalog-product__items">
+								<div class="catalog-product__item item-product">
+									<a href="card-product.html" class="item-product__body-link">
+										<div class="item-product__image-ibg">
+											<img data-src="@img/product/01.jpg" alt="01">
+										</div>
+										<div class="item-product__title">
+											Куртка
+										</div>
+									</a>
+									<div class="item-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+
+									<a href="#" class="button item-product__button">
+										В корзину
+									</a>
+								</div>
+
+
+								<div href="#" class="catalog-product__item item-product">
+									<a href="#" class="item-product__body-link">
+										<div class="item-product__image-ibg">
+											<img data-src="@img/product/01.jpg" alt="01">
+										</div>
+										<div class="item-product__title">
+											Куртка
+										</div>
+									</a>
+									<div class="item-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+
+									<a href="#" class="button item-product__button">
+										В корзину
+									</a>
+								</div>
+
+								<div href="#" class="catalog-product__item item-product">
+									<a href="#" class="item-product__body-link">
+										<div class="item-product__image-ibg">
+											<img data-src="@img/product/01.jpg" alt="01">
+										</div>
+										<div class="item-product__title">
+											Куртка
+										</div>
+									</a>
+									<div class="item-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+
+									<a href="#" class="button item-product__button">
+										В корзину
+									</a>
+								</div>
+
+								<div href="#" class="catalog-product__item item-product">
+									<a href="#" class="item-product__body-link">
+										<div class="item-product__image-ibg">
+											<img data-src="@img/product/01.jpg" alt="01">
+										</div>
+										<div class="item-product__title">
+											Куртка
+										</div>
+									</a>
+									<div class="item-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+
+									<a href="#" class="button item-product__button">
+										В корзину
+									</a>
+								</div>
+
+								<div href="#" class="catalog-product__item item-product">
+									<a href="#" class="item-product__body-link">
+										<div class="item-product__image-ibg">
+											<img data-src="@img/product/01.jpg" alt="01">
+										</div>
+										<div class="item-product__title">
+											Куртка
+										</div>
+									</a>
+									<div class="item-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+
+									<a href="#" class="button item-product__button">
+										В корзину
+									</a>
+								</div>
+
+								<div href="#" class="catalog-product__item item-product">
+									<a href="#" class="item-product__body-link">
+										<div class="item-product__image-ibg">
+											<img data-src="@img/product/01.jpg" alt="01">
+										</div>
+										<div class="item-product__title">
+											Куртка
+										</div>
+									</a>
+									<div class="item-product__price">
+										<span class="price">
+											<del>
+												<span class="woocommerce-Price-amount amount">3467 <span
+														class="woocommerce-Price-currencySymbol">₽</span></span>
+											</del>
+											<ins>
+												<span class="woocommerce-Price-amount amount">2990 </span><span
+													class="woocommerce-Price-currencySymbol">₽</span>
+											</ins>
+										</span>
+									</div>
+
+									<a href="#" class="button item-product__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="page__sidebar sidebar-filter">
+							<div class="sidebar-filter__title">
+								<span>Фильтр товаров</span>
+								<div class="sidebar-filter__close-button"></div>
+							</div>
+
+							<div class="sidebar-filter__items">
+								<div class="sidebar-filter__item">
+									<a href="#" class="sidebar-filter__item-main">
+										Мужское
+									</a>
+									<div class="sidebar-filter__body">
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Дублёнки
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Пальто
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Футболки
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Дублёнки
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="sidebar-filter__item">
+									<a href="#" class="sidebar-filter__item-main">
+										Женское
+									</a>
+									<div class="sidebar-filter__body">
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Дублёнки
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Пальто
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Футболки
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+										<a href="#" class="sidebar-filter__item-link">
+											<div class="sidebar-filter__item-link-title">
+												Дублёнки
+											</div>
+											<div class="sidebar-filter__item-link-count">
+												134
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+
+
+	</main>
+	@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
